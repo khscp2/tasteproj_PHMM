@@ -1,7 +1,13 @@
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-.navbar .navbar-collapse {
+.navbar-nav {
+    width: 100%;
     text-align: center;
+  }
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+  }
+
+ul.navbar {
+    background-color: #eee;
 }
