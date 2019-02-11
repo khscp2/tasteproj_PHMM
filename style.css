@@ -39,3 +39,24 @@ li a.nav-link {
   color: #487568 !important;
   font-weight: bold !important;
 }
+
+/* Banner */
+.image-banner {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.jumbotron {
+  margin-bottom: 0px !important;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Banner text */
+.banner-text {
+  position: absolute;
+  font-size: 35px;
+  top: 50%;
+  left: 10%;
+}
