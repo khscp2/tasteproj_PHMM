@@ -18,3 +18,19 @@
 .btn-yote{
   border: 0px solid transparent !important;
 }
+
+.jumbotron {
+  background-color: #bddfeb;
+}
+
+li.active {
+background-color: #6aaf6a !important;
+}
+
+li.active a.nav-link {
+  background-color: #6aaf6a !important;
+}
+
+.logo {
+  font-size: 40px !important;
+}
