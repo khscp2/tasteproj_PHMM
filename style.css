@@ -46,12 +46,27 @@ li.open a.dropdown-toggle {
   padding-right: 116px !important;
 }
 
+.dropdown-custom-deli:active {
+  padding-right: 116px !important;
+  background-color: #dedede !important;
+}
+
 .dropdown-custom-spcocca {
   padding-right: 25px !important;
 }
 
+.dropdown-custom-spcocca:active {
+  padding-right: 25px !important;
+  background-color: #dedede !important;
+}
+
 .dropdown-custom-dlyspc {
   padding-right: 52px !important;
+}
+
+.dropdown-custom-dlyspc:active {
+  padding-right: 52px !important;
+  background-color: #dedede !important;
 }
 
 .navbar-button-active:active {
