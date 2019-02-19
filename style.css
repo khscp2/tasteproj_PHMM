@@ -30,16 +30,16 @@
   padding-bottom: 15px;
 }
 
-li.active a.nav-link {
-  background-color: #315047 !important;
-}
-
 li a.nav-link {
   color: #f3ffff !important;
 }
 
 li a.dropdown-toggle {
   color: #f3ffff !important;
+}
+
+li.open a.dropdown-toggle {
+  background-color: #315047 !important;
 }
 
 .dropdown-custom-deli {
@@ -52,6 +52,10 @@ li a.dropdown-toggle {
 
 .dropdown-custom-dlyspc {
   padding-right: 52px !important;
+}
+
+.navbar-button-active:active {
+  background-color: #315047 !important;
 }
 
 .logo {
