@@ -32,11 +32,26 @@
 
 li.active a.nav-link {
   background-color: #315047 !important;
-  color: #f3ffff !important;
 }
 
 li a.nav-link {
   color: #f3ffff !important;
+}
+
+li a.dropdown-toggle {
+  color: #f3ffff !important;
+}
+
+.dropdown-custom-deli {
+  padding-right: 116px !important;
+}
+
+.dropdown-custom-spcocca {
+  padding-right: 25px !important;
+}
+
+.dropdown-custom-dlyspc {
+  padding-right: 52px !important;
 }
 
 .logo {
