@@ -73,6 +73,14 @@ li.open a.dropdown-toggle {
   background-color: #315047 !important;
 }
 
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
 .logo {
   font-size: 40px !important;
   color: #487568 !important;
