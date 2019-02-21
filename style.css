@@ -50,14 +50,16 @@ li a.nav-link {
   margin: 0 auto;
 }
 
-#yeet {
+#left {
   float: left;
   padding-left: 40px;
   padding-top: 40px;
 }
 
-#tote {
+#right {
   float: right;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 
 /* Banner */
@@ -76,7 +78,7 @@ li a.nav-link {
 /* Banner text */
 .banner-text {
   position: absolute;
-  font-size: 60px;
+  font-size: 80px;
   top: 50%;
   left: 10%;
   font-family: lunchBox;

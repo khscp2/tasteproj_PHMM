@@ -1,0 +1,23 @@
+.image-banner > img {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.desc {
+    margin: 15px;
+    width: 40%;
+}
+
+.item {
+    margin-left: 110px;
+}
+
+.name {
+    margin-right: 15px;
+    float: left;
+    font-size: 20px;
+}
+
+.item-wrapper {
+    height:auto;
+    float: left;
+}
