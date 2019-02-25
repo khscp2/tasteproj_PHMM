@@ -1,7 +1,6 @@
-let items = {};
-
 function addItem (item) {
     const order = window.localStorage.getItem('order')
+    let items = [];
 
     if(order) items = JSON.parse(order);
 
@@ -11,6 +10,11 @@ function addItem (item) {
 }
 
 function removeItem(item) {
+    const order = JSON.parse(window.localStorage.getItem('order'));
 
+    for(let _item in order) {
+        if(order[_item] === item) order.splice(0, _item)
+    }
+    window.localStorage.setItem('order', JSON.stringify(order));
 }
 

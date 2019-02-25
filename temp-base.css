@@ -21,3 +21,16 @@
     height:auto;
     float: left;
 }
+
+.test1 {
+    height:auto;
+    float:right;
+}
+
+.test {
+    float:left;
+}
+
+#hack {
+    opacity: 0;
+}
