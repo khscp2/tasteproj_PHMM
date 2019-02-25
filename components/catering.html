@@ -29,9 +29,9 @@
                     View Order
                 </button>                
                 <ul class="dropdown-menu">
-                    <li><a onclick="addItem('anime')">Add anime</a></li>
+                    <div id="order-list"></div>
                     <li class="divider"></li>
-                    <li><a onclick="removeItem('anime')">Remove anime</a></li>
+                    <li><a onclick="clearOrder()">Clear Order</a></li>
                 </ul>
             </div>
             <hr id="hack">
@@ -68,7 +68,7 @@
                             Asparagus Orange Salad
                         </div>
                         <div class="add-cart">
-                            <button onclick="additem('uwu')">Add</button>
+                            <button onclick="addItem('uwu')">Add</button>
                         </div>
                         <div class="desc">
                             Mixed baby greens, asparagus spears, fresh orange segments, sliced red onion, and crumbled goat cheese served with a orange poppy vinaigrette.
