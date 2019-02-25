@@ -122,16 +122,6 @@ li.open a.dropdown-toggle {
   margin: 0 auto;
 }
 
-#yeet {
-  float: left;
-  padding-left: 40px;
-  padding-top: 40px;
-}
-
-#tote {
-  float: right;
-}
-
 /* Banner */
 .image-banner {
   position: relative;
