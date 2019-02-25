@@ -73,10 +73,36 @@ li.open a.dropdown-toggle {
   background-color: #315047 !important;
 }
 
+.right {
+  float: right !important;
+  text-align: right !important;
+  display: block !important;
+}
+
+.left {
+  float: left !important;
+  text-align: left !important;
+  display: block !important;
+}
+
 .logo {
   font-size: 40px !important;
   color: #487568 !important;
   font-weight: bold !important;
+}
+
+td.specialmenu {
+  border-bottom: 1px dotted;
+}
+
+.item-description {
+  font-size: 12px !important;
+  width: 83%;
+}
+
+.item {
+  font-size: 14px !important;
+  color: #08845f;
 }
 
 .force-center {
@@ -84,16 +110,14 @@ li.open a.dropdown-toggle {
   margin: 0 auto;
 }
 
-#left {
+#yeet {
   float: left;
   padding-left: 40px;
   padding-top: 40px;
 }
 
-#right {
+#tote {
   float: right;
-  padding-left: 40px;
-  padding-top: 40px;
 }
 
 /* Banner */
@@ -112,7 +136,7 @@ li.open a.dropdown-toggle {
 /* Banner text */
 .banner-text {
   position: absolute;
-  font-size: 80px;
+  font-size: 60px;
   top: 50%;
   left: 10%;
   font-family: lunchBox;
