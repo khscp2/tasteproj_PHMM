@@ -3,17 +3,27 @@ window.onload = (e) => {
         const rootElement = document.getElementById('order-list');
         const orders = getOrder();
         if(orders[0] === "" || orders === undefined) return;
+        let overAllPrice = 0;
         orders.forEach(order => {
             if(order === null) return;
 
             const li =  document.createElement('li');
             const a = document.createElement('a')
             
-            a.innerText = order;
+            overAllPrice = overAllPrice + parseInt(order.price)
+            a.innerText = `${order.name} - $${order.price}`;
             li.appendChild(a);
 
             rootElement.parentNode.insertBefore(li, rootElement.nextSibling);
         });
+
+        const li =  document.createElement('li');
+        const a = document.createElement('a')
+
+        a.innerText = `Check Out - Costing $${overAllPrice}`
+
+        li.appendChild(a);
+        document.getElementById('checkOut').replaceWith(li)
     }
 }
 
@@ -36,7 +46,7 @@ function removeItem (item) {
     location.reload();    
 }
 
-function getOrder () {    
+function getOrder () {
     return(JSON.parse(window.localStorage.getItem('order')) || [])
 }
 

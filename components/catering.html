@@ -28,10 +28,11 @@
                 <span class="caret"></span>
                     View Order
                 </button>                
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu pull-right">
                     <div id="order-list"></div>
                     <li class="divider"></li>
                     <li><a onclick="clearOrder()">Clear Order</a></li>
+                    <li id="checkOut"><a>Check Out</a></li>
                 </ul>
             </div>
             <hr id="hack">
@@ -66,140 +67,140 @@
             <div class="banner-text">Catering</div>
         </div>
         <div class="menu-table">
-                <table align="center">
-                    <tr>
-                        <col width="470px">
-                        <col width="75px">
-                        <col width="470px">
-                        <td class="specialmenu">
-                            <div class="item">
-                                Deluxe BBQ Party
-                            </div>
-                            <div class="right">
-                                $29.99 Per Person
-                            </div>
-                            <br>
-                            <div class="right">
-                                Add to Cart
-                            </div>
-                            <div class="item-description">
-                                The ultimate BBQ - right in your back yard!
-                            </div>
-                        </td>
-                        <td>
+            <table align="center">
+                <tr>
+                    <col width="470px">
+                    <col width="75px">
+                    <col width="470px">
+                    <td class="specialmenu">
+                        <div class="item">
+                            Deluxe BBQ Party
+                        </div>
+                        <div class="right">
+                            $29.99 Per Person
+                        </div>
+                        <br>
+                        <div class="right">
+                            <button onclick="addItem({'name':'Deluxe BBQ Party','price':'29.99'})" id="cart">Add to Cart</button>
+                        </div>
+                        <div class="item-description">
+                            The ultimate BBQ - right in your back yard!
+                        </div>
+                    </td>
+                    <td>
 
-                        </td>
-                        <td class="specialmenu">
-                            <div class="item">
-                                Graduation Party
-                            </div>
-                            <div class="right">
-                                $17.99 per person
-                            </div>
-                            <br>
-                            <div class="right">
-                                Add to Cart
-                            </div>
-                            <div class="item-description">
-                                Get a celebratory sub with your graduates year! Looks amazing and also includes hot food selections!
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="specialmenu">
-                            <div class="item">
-                                Holiday Deli Platters
-                            </div>
-                            <div class="right">
-                                $11.99 per person
-                            </div>
-                            <br>
-                            <div class="right">
-                                Add to Cart
-                            </div>
-                            <div class="item-description">
-                                Customize a deli platter for your holiday party. Choose from one of our options or create your own !!
-                            </div>
-                        </td>
-                        <td>
+                    </td>
+                    <td class="specialmenu">
+                        <div class="item">
+                            Graduation Party
+                        </div>
+                        <div class="right">
+                            $17.99 per person
+                        </div>
+                        <br>
+                        <div class="right">
+                            <button onclick="addItem({'name':'Graduation Party','price':'17.99'})" id="cart">Add to Cart</button>
+                        </div>
+                        <div class="item-description">
+                            Get a celebratory sub with your graduates year! Looks amazing and also includes hot food selections!
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="specialmenu">
+                        <div class="item">
+                            Holiday Deli Platters
+                        </div>
+                        <div class="right">
+                            $11.99 per person
+                        </div>
+                        <br>
+                        <div class="right">
+                            <button onclick="addItem({'name':'Holiday Deli Platters','price':'11.99'})" id="cart">Add to Cart</button>
+                        </div>
+                        <div class="item-description">
+                            Customize a deli platter for your holiday party. Choose from one of our options or create your own !!
+                        </div>
+                    </td>
+                    <td>
 
-                        </td>
-                        <td class="specialmenu">
-                            <div class="item" id="specialmenu">
-                                Holiday Hot and Cold Buffet
-                            </div>
-                            <div class="right">
-                                $16.99 per person
-                            </div>
-                            <br>
-                            <div class="right">
-                                Add to Cart
-                            </div>
-                            <div class="item-description-upspan">
-                                Enjoy your holiday celebration with a deli platter and 
-                            </div>
-                            <span class="item-description">
-                                hot selections of your choice to really warm up your party!!
-                            </span>
-                        </td>
-                    </tr>
-                    <tr style="height: 124px;">
-                        <td class="specialmenu">
-                            <div class="item">
-                                Holiday Hot Buffet
-                            </div>
-                            <div class="right">
-                                $19.99 per person
-                            </div>
-                            <br>
-                            <div class="right">
-                                Add to Cart
-                            </div>
-                            <div class="item-description">
-                                Choose from two appetizers, three hot dishes, salad and rolls
-                            </div>
-                            
-                        </td>
-                        <td>
+                    </td>
+                    <td class="specialmenu">
+                        <div class="item" id="specialmenu">
+                            Holiday Hot and Cold Buffet
+                        </div>
+                        <div class="right">
+                            $16.99 per person
+                        </div>
+                        <br>
+                        <div class="right">
+                            <button onclick="addItem({'name':'Holiday Hot and Cold Buffet','price':'16.99'})" id="cart">Add to Cart</button>
+                        </div>
+                        <div class="item-description-upspan">
+                            Enjoy your holiday celebration with a deli platter and 
+                        </div>
+                        <span class="item-description">
+                            hot selections of your choice to really warm up your party!!
+                        </span>
+                    </td>
+                </tr>
+                <tr style="height: 124px;">
+                    <td class="specialmenu">
+                        <div class="item">
+                            Holiday Hot Buffet
+                        </div>
+                        <div class="right">
+                            $19.99 per person
+                        </div>
+                        <br>
+                        <div class="right">
+                            <button onclick="addItem({'name':'Holiday Hot Buffet','price':'19.99'})" id="cart">Add to Cart</button>
+                        </div>
+                        <div class="item-description">
+                            Choose from two appetizers, three hot dishes, salad and rolls
+                        </div>
+                        
+                    </td>
+                    <td>
 
-                        </td>
-                        <td class="specialmenu">
-                            <div class="item">
-                                Holiday Hot Buffet II
-                            </div>
-                            <div class="right">
-                                $29.99 per person
-                            </div>
-                            <br>
-                            <div class="right">
-                                Add to Cart
-                            </div>
-                            <div class="item-description-upspan">
-                                Let us do the cooking for your holiday party. Choose 
-                            </div>
-                            <span class="item-description">
-                                from two appetizers, three hot entrees, two side dish, salad and rolls
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="specialmenu">
-                            <div class="item">
-                                Hot and Cold Buffet
-                            </div>
-                            <div class="right">
-                                $19.99 per person
-                            </div>
-                            <br>
-                            <div class="right">
-                                Add to Cart
-                            </div>
-                            <div class="item-description">
-                                Try a combination of sandwiches and hot selections to meet your party needs!!
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                    </td>
+                    <td class="specialmenu">
+                        <div class="item">
+                            Holiday Hot Buffet II
+                        </div>
+                        <div class="right">
+                            $29.99 per person
+                        </div>
+                        <br>
+                        <div class="right">
+                            <button onclick="addItem({'name':'Holiday Hot Buffet II','price':'29.99'})" id="cart">Add to Cart</button>
+                        </div>
+                        <div class="item-description-upspan">
+                            Let us do the cooking for your holiday party. Choose 
+                        </div>
+                        <span class="item-description">
+                            from two appetizers, three hot entrees, two side dish, salad and rolls
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="specialmenu">
+                        <div class="item">
+                            Hot and Cold Buffet
+                        </div>
+                        <div class="right">
+                            $19.99 per person
+                        </div>
+                        <br>
+                        <div class="right">
+                            <button onclick="addItem({'name':'Hot and Cold Buffet','price':'19.99'})" id="cart">Add to Cart</button>
+                        </div>
+                        <div class="item-description">
+                            Try a combination of sandwiches and hot selections to meet your party needs!!
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
