@@ -42,6 +42,7 @@ function removeItem (item) {
     for(let _item in order) {
         if(order[_item] === item) delete order[_item]
     }
+    
     window.localStorage.setItem('order', JSON.stringify(order));
     location.reload();    
 }
