@@ -10,7 +10,7 @@ window.onload = (e) => {
             const li =  document.createElement('li');
             const a = document.createElement('a')
             
-            overAllPrice = overAllPrice + parseInt(order.price)
+            overAllPrice = overAllPrice + parseFloat(order.price)
             a.innerText = `${order.name} - $${order.price}`;
             li.appendChild(a);
 
