@@ -2,7 +2,9 @@ window.onload = (e) => {
     if(document.getElementById('order-list')) {
         const rootElement = document.getElementById('order-list');
         const orders = getOrder();
+
         if(orders[0] === "" || orders === undefined) return;
+        
         let overAllPrice = 0;
         orders.forEach(order => {
             if(order === null) return;
@@ -13,6 +15,8 @@ window.onload = (e) => {
             overAllPrice = overAllPrice + parseFloat(order.price)
             a.innerText = `${order.name} - $${order.price}`;
             li.appendChild(a);
+            li.id = order.id;
+            li.onclick = () => {removeItem(li.id)};
 
             rootElement.parentNode.insertBefore(li, rootElement.nextSibling);
         });
@@ -31,18 +35,20 @@ function addItem (item) {
     const order = window.localStorage.getItem('order')
     let items = [];
     if(order) items = JSON.parse(order);
+    item['id'] = Math.floor((Math.random() * 100000) + 1).toString()
     items.push(item)
     window.localStorage.setItem('order', JSON.stringify(items));
     location.reload(); 
 }
 
-function removeItem (item) {
+function removeItem(itemId) {
     const order = JSON.parse(window.localStorage.getItem('order'));
 
     for(let _item in order) {
-        if(order[_item] === item) delete order[_item]
+        if(order[_item] === null) continue;
+        if(order[_item].id === itemId) delete order[_item];
     }
-    
+
     window.localStorage.setItem('order', JSON.stringify(order));
     location.reload();    
 }
