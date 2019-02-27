@@ -3,8 +3,8 @@ window.onload = (e) => {
         const rootElement = document.getElementById('order-list');
         const orders = getOrder();
 
-        if(orders[0] === "" || orders === undefined) return;
-        
+        if(orders === []) return;
+
         let overAllPrice = 0;
         orders.forEach(order => {
             if(order === null) return;

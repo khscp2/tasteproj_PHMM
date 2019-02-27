@@ -30,3 +30,12 @@
 #hack {
     opacity: 0;
 }
+
+button {
+    border: 0px;
+    transition: background-color .3s;
+}
+
+button:hover{
+    background-color: darkgray;
+}
