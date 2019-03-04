@@ -97,24 +97,43 @@ li.open a.dropdown-toggle {
 
 #specialmenu {
   margin-top: 0px !important;
-  padding:0px;
+  padding: 0px;
+}
+
+.buffalo-wings {
+  margin-top: 0px !important;
+}
+
+.baked-brie {
+  width: 470px !important;
+  height: 165px !important;
+  padding-bottom: 42px !important;
+}
+
+.broccoli-salad {
+  margin-top: 4px !important;
 }
 
 .item-description-upspan {
   font-size: 14px !important;
-  width: 83%;
+  width: 83% !important;
 }
 
 .item-description {
   font-size: 14px !important;
   width: 83%;
-  margin-bottom: 20px !important;
+  margin-bottom: 20px;
+}
+
+.item-description-special {
+  font-size: 14px !important;
+  width: 83%;
 }
 
 .item {
   font-size: 16px !important;
   color: #08845f;
-  margin-top: 20px !important;
+  margin-top: 20px;
 }
 
 .force-center {
