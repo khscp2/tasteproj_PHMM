@@ -136,6 +136,19 @@ li.open a.dropdown-toggle {
   margin-top: 20px;
 }
 
+.dlyspc-item {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.dlyspc-price {
+
+}
+
+.dlyspc-description {
+
+}
+
 .force-center {
   text-align: center;
   margin: 0 auto;
