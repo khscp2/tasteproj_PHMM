@@ -4,21 +4,21 @@
 }
 
 .navbar-nav {
-    width: 100%;
-    text-align: center;
-  }
+  width: 100%;
+  text-align: center;
+}
 
 .navbar-nav li {
-    float: none;
-    display: inline-block;
-  }
+  float: none;
+  display: inline-block;
+}
 .navbar-custom {
-    background-color: #487568 !important;
-    border-top-width: 0px !important;
-    border-right-width: 0px !important;
-    border-bottom-width: 0px !important;
-    border-left-width: 0px !important;
-    margin: 0px !important;
+  background-color: #487568 !important;
+  border-top-width: 0px !important;
+  border-right-width: 0px !important;
+  border-bottom-width: 0px !important;
+  border-left-width: 0px !important;
+  margin: 0px !important;
 }
 .btn-yote{
   border: 0px solid transparent !important;
