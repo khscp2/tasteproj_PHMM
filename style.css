@@ -111,7 +111,7 @@ li.open a.dropdown-toggle {
 }
 
 .broccoli-salad {
-  margin-top: 4px !important;
+  margin-top: 0px !important;
 }
 
 .item-description-upspan {
@@ -134,6 +134,19 @@ li.open a.dropdown-toggle {
   font-size: 16px !important;
   color: #08845f;
   margin-top: 20px;
+}
+
+.dlyspc-item {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.dlyspc-price {
+
+}
+
+.dlyspc-description {
+
 }
 
 .force-center {
