@@ -7,6 +7,11 @@
     width: 40%;
 }
 
+.marginTop {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
 .name {
     margin-right: 15px;
     float: left;

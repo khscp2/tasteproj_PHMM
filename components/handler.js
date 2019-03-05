@@ -1,34 +1,37 @@
 window.onload = (e) => {
-    if(document.getElementById('order-list')) {
-        const rootElement = document.getElementById('order-list');
-        const orders = getOrder();
+    if(document.getElementById('order-list')) initMenu();
+}
 
-        if(orders === []) return;
+// Order menu code!
+function initMenu() {
+    const rootElement = document.getElementById('order-list');
+    const orders = getOrder();
 
-        let overAllPrice = 0;
-        orders.forEach(order => {
-            if(order === null) return;
+    if(orders === []) return;
 
-            const li =  document.createElement('li');
-            const a = document.createElement('a')
-            
-            overAllPrice = overAllPrice + parseFloat(order.price)
-            a.innerText = `${order.name} - $${order.price}`;
-            li.appendChild(a);
-            li.id = order.id;
-            li.onclick = () => {removeItem(li.id)};
-
-            rootElement.parentNode.insertBefore(li, rootElement.nextSibling);
-        });
+    let overAllPrice = 0;
+    orders.forEach(order => {
+        if(order === null) return;
 
         const li =  document.createElement('li');
         const a = document.createElement('a')
-
-        a.innerText = `Check Out - Costing $${overAllPrice}`
-
+        
+        overAllPrice = overAllPrice + parseFloat(order.price)
+        a.innerText = `${order.name} - $${order.price}`;
         li.appendChild(a);
-        document.getElementById('checkOut').replaceWith(li)
-    }
+        li.id = order.id;
+        li.onclick = () => removeItem(li.id);
+
+        rootElement.parentNode.insertBefore(li, rootElement.nextSibling);
+    });
+
+    const li =  document.createElement('li');
+    const a = document.createElement('a')
+
+    a.innerText = `Check Out - Costing $${overAllPrice}`
+
+    li.appendChild(a);
+    document.getElementById('checkOut').replaceWith(li)
 }
 
 function addItem (item) {

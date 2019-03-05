@@ -8,6 +8,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../temp-base.css">
+        <script src="handler.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -21,6 +23,19 @@
                     <li><a href="#">Spanish</a></li>
                 </ul>
             </div>
+            <div class="dropdown test1">
+                <button class="btn btn-default dropdown-toggle btn-yote" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+                    View Order
+                </button>                
+                <ul class="dropdown-menu pull-right">
+                    <div id="order-list"></div>
+                    <li class="divider"></li>
+                    <li><a onclick="clearOrder()">Clear Order</a></li>
+                    <li id="checkOut"><a>Check Out</a></li>
+                </ul>
+            </div>
+            <hr id="hack">
             <div class="jumbotron">
                 <table align="center">
                     <tr>
@@ -47,6 +62,10 @@
                     </tr>
                 </table>
             </div>
+            <span class="image-banner">
+                <img src="http://atasteofrealitycatering.com/wp-content/uploads/breakfast.jpg" alt="breakfast" style="width:100%;">
+                <div class="banner-text">Special Occasions</div>
+            </span>
             <div>
                 <br>
                 <br>
