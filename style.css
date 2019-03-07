@@ -100,20 +100,6 @@ li.open a.dropdown-toggle {
   padding: 0px;
 }
 
-.buffalo-wings {
-  margin-top: 0px !important;
-}
-
-.baked-brie {
-  width: 470px !important;
-  height: 165px !important;
-  padding-bottom: 42px !important;
-}
-
-.broccoli-salad {
-  margin-top: 0px !important;
-}
-
 .item-description-upspan {
   font-size: 14px !important;
   width: 83% !important;
@@ -133,7 +119,7 @@ li.open a.dropdown-toggle {
 .item {
   font-size: 16px !important;
   color: #08845f;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .dlyspc-item {
