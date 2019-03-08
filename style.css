@@ -135,6 +135,14 @@ li.open a.dropdown-toggle {
 
 }
 
+td.daily-right-padding {
+  padding-right: 10px;
+}
+
+td.daily-left-padding {
+  padding-left: 10px;
+}
+
 td.notop {
   padding-top: 0px !important;
   margin-top: 0px !important;
