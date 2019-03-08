@@ -13,7 +13,7 @@
   display: inline-block;
 }
 .navbar-custom {
-  background-color: #487568 !important;
+  background-color: #34a997 !important;
   border-top-width: 0px !important;
   border-right-width: 0px !important;
   border-bottom-width: 0px !important;
@@ -25,7 +25,7 @@
 }
 
 .jumbotron {
-  background-color: #eeeef2;
+  background-color: #e8e8e8;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -39,7 +39,7 @@ li a.dropdown-toggle {
 }
 
 li.open a.dropdown-toggle {
-  background-color: #315047 !important;
+  background-color: #00a28a !important;
 }
 
 .dropdown-custom-deli {
@@ -70,7 +70,7 @@ li.open a.dropdown-toggle {
 }
 
 .navbar-button-active:active {
-  background-color: #315047 !important;
+  background-color: #30a593 !important;
 }
 
 .right {
@@ -87,7 +87,7 @@ li.open a.dropdown-toggle {
 
 .logo {
   font-size: 40px !important;
-  color: #487568 !important;
+  color: #4ABDAC !important;
   font-weight: bold !important;
 }
 
@@ -105,6 +105,10 @@ li.open a.dropdown-toggle {
   width: 83% !important;
 }
 
+.menu-body {
+  background-color: #e8e8e8;
+}
+
 .item-description {
   font-size: 14px !important;
   width: 83%;
@@ -118,7 +122,7 @@ li.open a.dropdown-toggle {
 
 .item {
   font-size: 16px !important;
-  color: #08845f;
+  color: #c38403;
   margin-top: 15px;
 }
 
