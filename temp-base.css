@@ -45,7 +45,10 @@ button:hover{
     background-color: darkgray;
 }
 
-.blue {
-    background-color: aqua;
-    width: 100%;
+footer {
+    background-color: gray !important;
+}
+
+.footer-copyright {
+    background-color: blue;
 }
