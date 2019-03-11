@@ -24,6 +24,16 @@
   border: 0px solid transparent !important;
 }
 
+.home {
+  text-align: center;
+}
+
+.home-section {
+  width: 20%;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
 .jumbotron {
   background-color: #e8e8e8;
   padding-top: 15px;
@@ -129,14 +139,6 @@ li.open a.dropdown-toggle {
 .dlyspc-item {
   font-size: 16px !important;
   font-weight: bold;
-}
-
-.dlyspc-price {
-
-}
-
-.dlyspc-description {
-
 }
 
 td.daily-right-padding {
