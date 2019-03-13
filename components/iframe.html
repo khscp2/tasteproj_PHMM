@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../temp-base.css">
+        <script src="./handler.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="dropdown test">
+                <button class="btn btn-default dropdown-toggle btn-yote" type="button" data-toggle="dropdown">
+                    Change Language
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Spanish</a></li>
+                </ul>
+            </div>
+            <div class="dropdown test1">
+                <button class="btn btn-default dropdown-toggle btn-yote" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+                    View Order
+                </button>                
+                <ul class="dropdown-menu pull-right">
+                    <div id="order-list"></div>
+                    <li class="divider"></li>
+                    <li><a onclick="clearOrder()">Clear Order</a></li>
+                    <li id="checkOut"><a>Check Out</a></li>
+                </ul>
+            </div>
+            <hr id="hack">
+            <div class="jumbotron">
+                <table align="center">
+                    <tr>
+                        <col width="533">
+                        <td>
+                            <h1 class="logo">Taste of Reality</h1>
+                        </td>
+                        <td>
+                            <nav class="navbar navbar-default navbar-custom">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item"><a class="nav-link navbar-button-active" href="../home.html">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-custom-deli" href="menu.html">Deli</a></li>
+                                            <li><a class="dropdown-custom-spcocca" href="specialoccasions.html">Special Occasions</a></li>
+                                            <li><a class="dropdown-custom-dlyspc" href="#">Daily Specials</a></li>
+                                        </ul>
+                                    </li> 
+                                    <li class="nav-item"><a class="nav-link navbar-button-active" href="catering.html">Catering</a></li>                                   
+                                </ul>
+                            </nav>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <iframe style="border:0px" width="100%" height="900px" src="https://ordering.chownow.com/order/4077/locations"></iframe>
+        </div>
+    </body>
+</html>

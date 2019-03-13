@@ -1,5 +1,6 @@
 window.onload = (e) => {
     if(document.getElementById('order-list')) initMenu();
+    if(document.querySelector('#checkout-list > table')) finishMenu();
 }
 
 // Order menu code!
@@ -32,6 +33,21 @@ function initMenu() {
 
     li.appendChild(a);
     document.getElementById('checkOut').replaceWith(li)
+}
+
+function finishMenu () {
+    const rootElement = document.querySelector('#checkout-list > table');
+    const orders = getOrder();
+
+    if(orders === []) return;
+
+    orders.forEach(order => {
+        if(order === null) return;
+        
+        const row = rootElement.insertRow(0);
+        const cell = row.insertCell(0);
+        cell.innerText = `${order.name} - $${order.price}`;
+    });
 }
 
 function addItem (item) {
