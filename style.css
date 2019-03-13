@@ -29,8 +29,8 @@
 }
 
 .home-section {
-  width: 20%;
-  font-size: 13px;
+  width: 70%;
+  font-size: 15px;
   padding-bottom: 10px;
 }
 
@@ -179,4 +179,37 @@ td.notop {
   top: 50%;
   left: 10%;
   font-family: lunchBox;
+}
+
+.banner-text-home {
+  position: absolute;
+  font-size: 3.8vw;
+  top: 40%;
+  left: 32%;
+  font-family: lunchBox;
+}
+
+.banner-text-home-desc {
+  position: absolute;
+  font-size: 3vw;
+  top: 50%;
+  left: 42%;
+  font-family: lunchBox;
+}
+
+#home-button {
+  font-size: 2.6vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #4ABDAC;
+  border-radius: 20px;
+}
+
+#home-button:active {
+  background-color: #30a593;
+}
+
+#home-button-a {
+  color: #f3ffff;
+  text-decoration: none;
 }
