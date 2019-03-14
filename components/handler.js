@@ -30,6 +30,7 @@ function initMenu() {
     const a = document.createElement('a')
 
     a.innerText = `Check Out - Costing $${overAllPrice}`
+    a.href = './checkout.html'
 
     li.appendChild(a);
     document.getElementById('checkOut').replaceWith(li)
@@ -42,13 +43,19 @@ function finishMenu () {
 
     if(orders === []) return;
 
+    let overAllPrice = 0;
     orders.forEach(order => {
         if(order === null) return;
-        
+
+
+        overAllPrice = overAllPrice + parseFloat(order.price)
         const row = rootElement.insertRow(0);
         const cell = row.insertCell(0);
         cell.innerText = `${order.name} - $${order.price}`;
     });
+
+    document.getElementById('overallPrice').innerHTML = `Total: $${overAllPrice}`;
+    document.querySelector('body > div > div.dropdown.test1 > button').style.display = "none"
 }
 
 function addItem (item) {

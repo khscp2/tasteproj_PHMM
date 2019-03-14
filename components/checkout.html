@@ -32,10 +32,36 @@
                     <div id="order-list"></div>
                     <li class="divider"></li>
                     <li><a onclick="clearOrder()">Clear Order</a></li>
-                    <li id="checkOut"><a href="./checkout.html">Check Out</a></li>
+                    <li id="checkOut"><a>Check Out</a></li>
                 </ul>
             </div>
             <hr id="hack">
+            <div class="jumbotron">
+                <table align="center">
+                    <tr>
+                        <col width="533">
+                        <td>
+                            <h1 class="logo">Taste of Reality</h1>
+                        </td>
+                        <td>
+                            <nav class="navbar navbar-default navbar-custom">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item"><a class="nav-link navbar-button-active" href="../home.html">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-custom-deli" href="menu.html">Deli</a></li>
+                                            <li><a class="dropdown-custom-spcocca" href="specialoccasions.html">Special Occasions</a></li>
+                                            <li><a class="dropdown-custom-dlyspc" href="dailyspec.html">Daily Specials</a></li>
+                                        </ul>
+                                    </li> 
+                                    <li class="nav-item"><a class="nav-link navbar-button-active" href="catering.html">Catering</a></li>                                   
+                                </ul>
+                            </nav>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <center class="checkout">
                 <h1>Thanks for ordering!</h1>
                 <h3>The following items have been ordered:</h3>
@@ -44,8 +70,19 @@
                         <tr></tr>
                     </table>
                 </div>
+                <div id="overallPrice"></div>
                 <button><a onclick="window.open('https://ordering.chownow.com/order/4077/locations','_blank')">Check Out</a></button>
             </center>
         </div>
+        <footer class="page-footer font-small blue">
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+              <a href="https://mdbootstrap.com/education/bootstrap/"> atasteofrealitycatering.com</a>
+              <span class="tooltiptext">
+                <span class="glyphicon glyphicon-map-marker"></span> 71 Fayson Lake Road, Kinnelon, New Jersey 07405-3128<br>
+                <span class="glyphicon glyphicon-earphone"></span> (973) 838-5018<br>
+                <span class="glyphicon glyphicon-print"></span> (973) 838-5551 <br>
+                <span class="glyphicon glyphicon-envelope"></span> admin@atasteofrealitycatering.com <br>
+            </div>
+        </footer>
     </body>
 </html>

@@ -198,6 +198,7 @@ td.notop {
 }
 
 #home-button {
+  margin-top: 30px;
   font-size: 2.6vw;
   font-family: sans-serif;
   font-weight: bold;
