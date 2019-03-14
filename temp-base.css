@@ -101,3 +101,8 @@ button:hover{
     font-size: 140%;
     margin-bottom: 20px;
 }
+
+.resize {
+    height: 200px;
+    margin: 15px;
+}
