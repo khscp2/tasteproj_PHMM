@@ -27,11 +27,13 @@ function initMenu() {
     });
 
     const li =  document.createElement('li');
-    const a = document.createElement('a')
+    const a = document.createElement('a');
 
-    a.innerText = `Check Out - Costing $${overAllPrice}`
-    a.href = './checkout.html'
+    a.innerText = `Check Out - Costing $${overAllPrice}`;
 
+    const filepaths = window.location.pathname.split('/');
+    a.href = filepaths.includes('components') ? './checkout.html': './components/checkout.html';
+    
     li.appendChild(a);
     document.getElementById('checkOut').replaceWith(li)
 }
