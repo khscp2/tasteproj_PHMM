@@ -35,6 +35,7 @@ function initMenu() {
     document.getElementById('checkOut').replaceWith(li)
 }
 
+// Checkout code!
 function finishMenu () {
     const rootElement = document.querySelector('#checkout-list > table');
     const orders = getOrder();
