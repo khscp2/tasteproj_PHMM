@@ -31,7 +31,7 @@
 
 .home-section {
   width: 70%;
-  font-size: 100%;
+  font-size: 16px;
   padding-bottom: 10px;
 }
 
@@ -97,13 +97,13 @@ li.open a.dropdown-toggle {
 }
 
 .logo {
-  font-size: calc(1.5vw + 3vh) !important;
+  font-size: 40px !important;
   color: #4ABDAC !important;
   font-weight: bold !important;
 }
 
 .navbar-width {
-  width: 533px !important;
+  width: 533px;
 }
 
 .specialmenu {
@@ -158,6 +158,21 @@ td.notop {
 .force-center {
   text-align: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width : 414px)
+{
+  .home-section
+  {
+    font-size: 10px !important;
+  }
+  .about-us-header {
+    font-size: 18px !important;
+  }
+  .logo {
+    font-size: 22px !important;
+  }
+
 }
 
 /* Banner */
