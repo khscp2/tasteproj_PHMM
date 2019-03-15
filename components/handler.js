@@ -31,8 +31,7 @@ function initMenu() {
 
     a.innerText = `Check Out - Costing $${overAllPrice}`;
 
-    const filepaths = window.location.pathname.split('/');
-    a.href = filepaths.includes('components') ? './checkout.html': './components/checkout.html';
+    a.href = window.location.pathname.split('/').includes('components') ? './checkout.html': './components/checkout.html';
     
     li.appendChild(a);
     document.getElementById('checkOut').replaceWith(li)
