@@ -211,14 +211,19 @@ td.notop {
   top: 50%;
   left: 42%;
   font-family: lunchBox;
+  margin-top:40px;
 }
 
 #home-button {
   font-size: 2.6vw;
   font-family: sans-serif;
   font-weight: bold;
-  background-color: #4ABDAC;
+  background-color: #34a997;
   border-radius: 20px;
+}
+
+#home-button:hover {
+  background-color: #219180;
 }
 
 #home-button:active {

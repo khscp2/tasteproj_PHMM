@@ -1,4 +1,5 @@
 window.onload = (e) => {
+    if(window.innerWidth < 761) patchForPhone();
     if(document.getElementById('order-list')) initMenu();
     if(document.querySelector('#checkout-list > table')) finishMenu();
 }
@@ -28,7 +29,8 @@ function initMenu() {
 
     const li =  document.createElement('li');
     const a = document.createElement('a');
-
+    
+    overAllPrice = Math.round(overAllPrice);
     a.innerText = `Check Out - Costing $${overAllPrice}`;
 
     a.href = window.location.pathname.split('/').includes('components') ? './checkout.html': './components/checkout.html';
@@ -55,6 +57,7 @@ function finishMenu () {
         cell.innerText = `${order.name} - $${order.price}`;
     });
 
+    overAllPrice = Math.round(overAllPrice);
     document.getElementById('overallPrice').innerHTML = `Total: $${overAllPrice}`;
     document.querySelector('body > div > div.dropdown.test1 > button').style.display = "none"
 }
@@ -88,4 +91,12 @@ function getOrder () {
 function clearOrder () {
     window.localStorage.removeItem('order')
     location.reload();
+}
+
+function patchForPhone () {
+    document.querySelector('li.dropdown').classList.add('open');
+
+    for(let data of document.querySelectorAll('.menu-table td')) {
+        data.style.display = 'block'
+    }
 }
