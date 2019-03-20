@@ -58,8 +58,8 @@ li.open a.dropdown-toggle {
 }
 
 .dropdown-custom-deli:active {
-  padding-right: 116px !important;
-  background-color: #dedede !important;
+  padding-right: 116px;
+  background-color: #dedede;
 }
 
 .dropdown-custom-spcocca {
@@ -67,8 +67,8 @@ li.open a.dropdown-toggle {
 }
 
 .dropdown-custom-spcocca:active {
-  padding-right: 25px !important;
-  background-color: #dedede !important;
+  padding-right: 25px;
+  background-color: #dedede;
 }
 
 .dropdown-custom-dlyspc {
@@ -76,12 +76,12 @@ li.open a.dropdown-toggle {
 }
 
 .dropdown-custom-dlyspc:active {
-  padding-right: 52px !important;
-  background-color: #dedede !important;
+  padding-right: 52px;
+  background-color: #dedede ;
 }
 
 .navbar-button-active:active {
-  background-color: #30a593 !important;
+  background-color: #30a593;
 }
 
 .right {
@@ -184,6 +184,13 @@ td.notop {
     top: 32% !important;
     left: 32% !important;
   }
+  .dropdown-custom-deli {
+    color: #ffffff !important;
+  }
+  .dropdown-custom-spcocca {
+    color: #ffffff !important;  }
+  .dropdown-custom-dlyspc {
+    color: #ffffff !important;  }
 }
 
 /* Banner */
