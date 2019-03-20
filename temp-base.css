@@ -106,3 +106,7 @@ button:hover{
     height: 200px;
     margin: 15px;
 }
+
+.mapouter {
+    margin: 50px;
+}

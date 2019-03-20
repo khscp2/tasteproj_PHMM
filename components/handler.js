@@ -44,12 +44,15 @@ function finishMenu () {
     const rootElement = document.querySelector('#checkout-list > table');
     const orders = getOrder();
 
-    if(orders === []) return;
+    if(orders.length === 0) {
+        const row = rootElement.insertRow(0);
+        const cell = row.insertCell(0);
+        cell.innerText = 'Nothing! Go order something!'
+    };
 
     let overAllPrice = 0;
     orders.forEach(order => {
         if(order === null) return;
-
 
         overAllPrice = overAllPrice + parseFloat(order.price)
         const row = rootElement.insertRow(0);
