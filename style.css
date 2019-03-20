@@ -164,7 +164,7 @@ td.notop {
 {
   .home-section
   {
-    font-size: 10px !important;
+    font-size: 14px !important;
   }
   .about-us-header {
     font-size: 18px !important;
@@ -172,7 +172,18 @@ td.notop {
   .logo {
     font-size: 22px !important;
   }
-
+  .banner-text-home {
+    font-size: 35px !important;
+    left: 10% !important;
+    top: 25% !important;
+  }
+  #home-button {
+    font-size: 25px !important;
+  }
+  .banner-text-home-desc {
+    top: 32% !important;
+    left: 32% !important;
+  }
 }
 
 /* Banner */
@@ -199,7 +210,7 @@ td.notop {
 
 .banner-text-home {
   position: absolute;
-  font-size: 3.8vw;
+  font-size: 65px;
   top: 40%;
   left: 32%;
   font-family: lunchBox;
@@ -215,7 +226,7 @@ td.notop {
 }
 
 #home-button {
-  font-size: 2.6vw;
+  font-size: 42px;
   font-family: sans-serif;
   font-weight: bold;
   background-color: #34a997;
